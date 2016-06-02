@@ -7,10 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class KotlinNodeTodoBackendApplicationTests {
+class ApplicationTests {
 
-	@Test
-	fun contextLoads() {
-	}
+  @Test
+  fun contextLoads() {
+  }
 
 }
