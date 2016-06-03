@@ -44,3 +44,7 @@ idea {
     downloadSources = true
   }
 }
+
+task stage {
+  dependsOn build
+}
