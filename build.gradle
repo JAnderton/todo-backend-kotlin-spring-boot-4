@@ -14,7 +14,6 @@ buildscript {
   }
 }
 
-apply plugin: 'idea'
 apply plugin: 'kotlin'
 apply plugin: 'spring-boot'
 
@@ -38,13 +37,8 @@ dependencies {
   testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
-idea {
-  module {
-    downloadJavadoc = true
-    downloadSources = true
-  }
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.13'
 }
 
-task stage {
-  dependsOn build
-}
+task stage(dependsOn: ['build'])
