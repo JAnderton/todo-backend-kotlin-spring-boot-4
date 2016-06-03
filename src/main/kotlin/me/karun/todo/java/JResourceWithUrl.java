@@ -1,4 +1,4 @@
-package me.karun;
+package me.karun.todo.java;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 
@@ -6,15 +6,15 @@ import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class ResourceWithUrl<T> {
+public class JResourceWithUrl<T> {
 
   private T content;
   private String url;
 
-  public ResourceWithUrl() {
+  public JResourceWithUrl() {
   }
 
-  public ResourceWithUrl(T content, String url) {
+  public JResourceWithUrl(T content, String url) {
     this.content = content;
     this.url = url;
   }

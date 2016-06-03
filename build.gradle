@@ -32,9 +32,10 @@ repositories {
 }
 
 dependencies {
-  compile('org.springframework.boot:spring-boot-starter-data-rest')
-  compile("org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}")
-  testCompile('org.springframework.boot:spring-boot-starter-test')
+  compile 'org.springframework.boot:spring-boot-starter-data-rest'
+  compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+  compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.7.4"
+  testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
 idea {

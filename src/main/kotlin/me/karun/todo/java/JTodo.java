@@ -1,20 +1,20 @@
-package me.karun;
+package me.karun.todo.java;
 
-public class Todo {
+public class JTodo {
 
   private int id;
   private String title;
   private Boolean completed;
   private Integer order;
 
-  public Todo() {
+  public JTodo() {
   }
 
-  public Todo(String title) {
+  public JTodo(String title) {
     this.title = title;
   }
 
-  public Todo(int id, String title, Boolean completed, Integer order) {
+  public JTodo(int id, String title, Boolean completed, Integer order) {
     this.id = id;
     this.title = title;
     this.completed = completed;
@@ -34,9 +34,9 @@ public class Todo {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
 
-    Todo todo = (Todo) o;
+    JTodo JTodo = (JTodo) o;
 
-    if (id != todo.id) return false;
+    if (id != JTodo.id) return false;
 
     return true;
   }
@@ -62,11 +62,11 @@ public class Todo {
     this.order = order;
   }
 
-  public Todo merge(Todo newTodo) {
-    return new Todo(id,
-      nonNull(newTodo.title, title),
-      nonNull(newTodo.completed, completed),
-      nonNull(newTodo.order, order));
+  public JTodo merge(JTodo newJTodo) {
+    return new JTodo(id,
+      nonNull(newJTodo.title, title),
+      nonNull(newJTodo.completed, completed),
+      nonNull(newJTodo.order, order));
   }
 
   public long getId() {
