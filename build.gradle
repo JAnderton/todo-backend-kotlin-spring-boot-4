@@ -19,7 +19,7 @@ apply plugin: 'kotlin'
 apply plugin: 'spring-boot'
 
 jar {
-  baseName = 'kotlin-spring-boot-todo-backend'
+  baseName = 'todo-backend-kotlin-spring-boot-4'
   version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
